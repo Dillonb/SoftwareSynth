@@ -16,11 +16,11 @@ public class SquareWaveOscillator extends Oscillator
 		boolean goingUp = true;
 		int i = 0;
 		
-		int samples_per_cycle = (int)(samplerate / frequency / 2); //Calculate how many samples are in each cycle
+		int samples_per_cycle = (int)(samplerate / frequency); //Calculate how many samples are in each cycle
         int bufi = 0;
         int bufferswritten = 0;
         byte[] buf = new byte[buffersize]; //A 2-byte buffer to hold each sample
-		int slope = (amplitude * 2) / samples_per_cycle; //How much should the sample increase or decrease each step?
+		//int slope = (amplitude * 2) / samples_per_cycle; //How much should the sample increase or decrease each step?
         
 		while (this.play)
 		{

@@ -136,7 +136,7 @@ public class Note
 	}
 	public Note(String name)
 	{
-		System.out.println(name);
+		//System.out.println(name);
 		initHt();
 		this.frequency = notes.get(name);
 	}
