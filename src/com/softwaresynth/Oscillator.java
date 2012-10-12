@@ -61,6 +61,7 @@ public abstract class Oscillator
 	}
 	public Oscillator(int Samplerate, int Buffersize)
 	{
+		System.out.println("Created a new " + getType() + "samplerate: " + Samplerate + " buffersize: " + Buffersize);
 		initialize(Samplerate, Buffersize);
 	}
 	/*
