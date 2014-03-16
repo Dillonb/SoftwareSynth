@@ -8,7 +8,7 @@ public class SoftwareSynth extends JFrame implements KeyListener,
 		ActionListener {
 	static final long serialVersionUID = 1;
 	static final int samplerate = 16000;
-	String oscType = "SquareWaveOscillator";
+	String oscType = "SineWaveOscillator";
 	
 	JTextField typingArea;
 
@@ -63,6 +63,7 @@ public class SoftwareSynth extends JFrame implements KeyListener,
 		oscs = new OscillatorManager();
 		oscs.registerNewType(new SquareWaveOscillator(samplerate,20));
         oscs.registerNewType(new TriangleWaveOscillator(samplerate,20));
+        oscs.registerNewType(new SineWaveOscillator(samplerate,20));
 		// swq.start(400);
 	}
 	public void keyPressed(KeyEvent e)
